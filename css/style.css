@@ -1,0 +1,28 @@
+body{
+	background: #2B3E50;
+}
+
+.errorSpan{
+	color: red;
+	display: none;
+}
+
+#responseSendMail{
+	margin-top: 10px;
+	text-align: center;
+}
+
+.container, legend{
+	color: #6495ED;
+}
+
+.jumbotron{
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+	background: #4E5D6C;
+}
+
+.jumbotron h1{
+	color: #6495ED;
+}
