@@ -13,7 +13,7 @@
 		<div class="form-group">
 			<label for="inputEmail" class="col-lg-2 control-label">Email</label>
 			<div class="col-lg-10">
-				<input class="form-control" id="inputEmail" name="mail" placeholder="Email" type="text">
+				<input class="form-control" id="inputEmail" name="email" placeholder="Email" type="text">
 			</div>
 			<span class="col-lg-10 col-lg-offset-2 errorSpan" id="errorSpanMail">Veuillez nous indiquer un mail pour que nous puissions vous répondre.</span>	
 		</div>
@@ -28,11 +28,11 @@
 
 		<div class="form-group">
 			<div class="col-lg-10 col-lg-offset-2">
-				<button type="reset" class="btn btn-default">Vider les champs</button>
+				<button type="reset" id="resetFormContact" class="btn btn-default">Vider les champs</button>
 				<button type="submit" id="sendMail" class="btn btn-info">Envoyer un mail</button>
 			</div>
 			<div class="col-lg-12" id="responseSendMail">
-				<span></span>
+				Veuillez remplir tous les champs.
 			</div>
 
 		</div>
