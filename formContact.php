@@ -13,7 +13,7 @@
 		<div class="form-group">
 			<label for="inputEmail" class="col-lg-2 control-label">Email</label>
 			<div class="col-lg-10">
-				<input class="form-control" id="inputEmail" name="mail" placeholder="Email" type="text">
+				<input class="form-control" id="inputEmail" name="email" placeholder="Email" type="text">
 			</div>
 			<span class="col-lg-10 col-lg-offset-2 errorSpan" id="errorSpanMail">Veuillez nous indiquer un mail pour que nous puissions vous répondre.</span>	
 		</div>

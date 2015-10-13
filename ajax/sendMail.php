@@ -16,7 +16,7 @@
 		$errorName = '1';
 	}
 
-	if(!filter_var($mail, FILTER_VALIDATE_EMAIL)){
+	if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 		$errorMail = '1';
 	}
 
@@ -65,7 +65,9 @@
 
 		//message (avec balises possibles)
 		// $mail->Body = 'Message envoyé avec <b>succès</b> !';
-		$message = $msg;
+		$message  = '<p>Nom : ' . $name . '</p>';
+		$message .= '<p>Email : ' . $email . '</p>';
+		$message .= '<p>Message : ' . $msg . '</p>';
 		$mail->Body = $message;
 
 		//send the message, check for errors
