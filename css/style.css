@@ -1,8 +1,9 @@
-body{
-	/*background: #2B3E50;*/
+html{
 	background-image: url('../img/fond.png');
-	background-repeat: no-repeat;
-	background-size: cover;
+}
+
+body{
+	background-image: url('../img/fond.png');
 }
 
 .errorSpan{
@@ -19,6 +20,10 @@ body{
 .container, legend{
 	background: #2B3E50;
 	color: #6495ED;
+}
+
+.pitch{
+	font-size: 2rem;
 }
 
 .jumbotron{
