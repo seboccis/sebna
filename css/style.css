@@ -1,5 +1,8 @@
 body{
-	background: #2B3E50;
+	/*background: #2B3E50;*/
+	background-image: url('../img/fond.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .errorSpan{
@@ -14,6 +17,7 @@ body{
 }
 
 .container, legend{
+	background: #2B3E50;
 	color: #6495ED;
 }
 
