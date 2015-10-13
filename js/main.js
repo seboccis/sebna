@@ -1,4 +1,4 @@
-function showResultSendMail(response){
+function initializeFormContact(){
 
 	$('#inputName').parent().removeClass('has-error');
 	$('#inputEmail').parent().removeClass('has-error');
@@ -7,6 +7,14 @@ function showResultSendMail(response){
 	$('#errorSpanName').css({'display':'none'});
 	$('#errorSpanMail').css({'display':'none'});
 	$('#errorSpanMsg').css({'display':'none'});
+
+	$('#responseSendMail').fadeOut(100);
+
+}
+
+function showResultSendMail(response){
+
+	initializeFormContact();
 
 	var arrayResponse = jQuery.parseJSON(response);
 
@@ -25,23 +33,25 @@ function showResultSendMail(response){
 			$('#errorSpanMsg').css({'display':'inline'});
 		}
 
-		$('#responseSendMail').html('Veuillez remplir les champs.').addClass('alert alert-dismissible alert-warning');
+		$('#responseSendMail').fadeIn(100).addClass('alert alert-dismissible alert-warning');
 
 	}
 	else{
 
 		if(arrayResponse['responseMail'] == '0'){
-			$('#responseSendMail').html('Une erreur est survenue lors de l\'envoi du mail, veuillez renouveler l\'opération.').addClass('alert alert-dismissible alert-warning');
+			$('#responseSendMail').html('Une erreur est survenue lors de l\'envoi du mail, veuillez renouveler l\'opération.').fadeIn(100).addClass('alert alert-dismissible alert-warning');
 		}
 		else{
-			$('#responseSendMail').html('Votre message a bien été envoyé, nous vous répondrons sous peu.').removeClass('alert-warning').addClass('alert alert-dismissible alert-success');
+			$('#responseSendMail').html('Votre message a bien été envoyé, nous vous répondrons sous peu.').fadeIn(100).removeClass('alert-warning').addClass('alert alert-dismissible alert-success');
 		}
 
 	}
 
 }
 
-$('.container #formContact fieldset #sendMail').on('click', function(event){
+$('#resetFormContact').on('click', initializeFormContact);
+
+$('#sendMail').on('click', function(event){
 	event.preventDefault();
 	$.ajax({
 		url: 'ajax/sendMail.php',

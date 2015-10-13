@@ -9,6 +9,7 @@ body{
 
 #responseSendMail{
 	margin-top: 10px;
+	display: none;
 	text-align: center;
 }
 

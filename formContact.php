@@ -28,11 +28,11 @@
 
 		<div class="form-group">
 			<div class="col-lg-10 col-lg-offset-2">
-				<button type="reset" class="btn btn-default">Vider les champs</button>
+				<button type="reset" id="resetFormContact" class="btn btn-default">Vider les champs</button>
 				<button type="submit" id="sendMail" class="btn btn-info">Envoyer un mail</button>
 			</div>
 			<div class="col-lg-12" id="responseSendMail">
-				<span></span>
+				Veuillez remplir tous les champs.
 			</div>
 
 		</div>

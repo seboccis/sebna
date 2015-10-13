@@ -54,8 +54,8 @@
 
 		//qui envoie, et qui reçoit
 		$mail->setFrom(SMTPALIAS, 'Service de messagerie de SebNa');
-		// $mail->addAddress('wf3.nanterre.so@gmail.com', 'Sébastien OCCIS');
-		$mail->addAddress(MAILSEB);
+		$mail->addAddress(MAILSEB, 'Sébastien OCCIS');
+		$mail->addAddress(MAILNADIA, 'Nadia ARAB'); 
 
 		//mail au format HTML
 		$mail->isHTML(true); 
